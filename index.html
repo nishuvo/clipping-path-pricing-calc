@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricingCalculator">
+                <h2>Get the Minimum & Maximum Price</h2>
+            </div>
+            <!-- end of pricing calculator -->
+            <div class="pricingCalc">
+                <form class="calcPrice" action="">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="service">Services</label>
+                            <br>
+                            <select name="servicelist" id="servicelist" class="redBox" required>
+                                <option value="none">Select a service from the list</option>
+                                <option value="clipping">Clipping Path Service</option>
+                                <option value="bgremove">Background Removal</option>
+                                <option value="correction">Color Correction</option>
+                                <option value="dropshadow">Drop Shadow Services</option>
+                                <option value="ecom">E-Commerce Image Editing</option>
+                                <option value="ghosteffect">Ghost Effect/Neck Joint</option>
+                                <option value="photomask">Photo Masking Services</option>
+                                <option value="retouch">Photo Retouching Services</option>
+                            </select>
+                            <br>
+                            <label for="quantity">Quantity</label>
+                            <br>
+                            <input class="redBox" id="quantity" type="number" placeholder="Quantity" required>
+                        </div>
+                        <!-- end of calculator single section -->
+                        <div class="col-md-2 center my-auto">
+                            <input type="button" class="btn redButton" onclick="calc()" value="Generate">
+                        </div>
+                        <!-- generate button section -->
+                        <div class="col-md-5">
+                            <label for="minPrice">Min Price</label>
+                            <br>
+                            <div id="priceMin" class="redBox">
+                            </div>
+                            <br>
+                            <label for="maxPrice">Max Price</label>
+                            <br>
+                            <div id="priceMax" class="redBox">
+                            </div>
+                        </div>
+                        <!-- end of calculator single section -->
+                    </div>
+                    <!-- end of the whole row -->
+                </form>
+            </div>
+            <!-- end of the pricing calculator -->
+        </div>
+        <!-- end of the pricing container -->
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

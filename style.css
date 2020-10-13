@@ -1,0 +1,27 @@
+/* 
+
+*/
+.pricing{
+    padding: 80px 0; }
+.pricingCalculator{
+    text-align: center; }
+.pricingCalc{
+    padding: 40px 0; }
+.redBox {
+    border: 1px solid #c92128;
+    background: none;
+    height: 60px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 800; }
+.redButton {
+    background: #c92128;
+    width: auto;
+    color: #f5f0f0;
+    font: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none; }
